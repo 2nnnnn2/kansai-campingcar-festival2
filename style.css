@@ -1,0 +1,210 @@
+/* ===== 基本設定 ===== */
+body {
+    margin: 0;
+    font-family: "Noto Sans JP", Arial, sans-serif;
+    line-height: 1.4;
+    font-size: 18px;
+    color: #333;
+    background-color: #fafafa;
+}
+
+/* ===== HERO ===== */
+.hero {
+    height: 80vh;
+    background: url("images/image14.jpg") center / cover no-repeat;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.45);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 4.5rem;
+    margin: 0;
+    font-weight: 800;
+    font-style: normal;
+    color: #f9b52c;
+    -webkit-text-stroke: 2px #fa9005;
+    text-shadow: 5px 5px 10px #161515;
+    line-height: 1.1;
+}
+
+.hero-text p {
+    margin-top: 20px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #faf9f9;
+    background-color: black;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+/* ===== SECTION 共通 ===== */
+section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+section h2 {
+    font-size: 2.6rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 50px;
+    position:relative;
+}
+
+section h2::after {
+    content: "";
+    width: 100px;
+    height: 5px;
+    background: #f59e0b;
+    display: block;
+    margin: 15px auto 0;
+    border-radius: 3px;
+}
+
+/* ===== INFO ===== */
+.info {
+    background: #fff;
+}
+
+.event-box {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.event-date {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.event-time,
+.event-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.venue,
+.access,
+.organizer {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.venue h3,
+.access h3,
+.organizer h3 {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+    color:#f59e0b;
+}
+
+.access p strong{
+    color: #333;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.access h3 strong::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.map {
+    margin-top: 20px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    border-radius: 16px;
+}
+
+.note {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* ===== GALLERY ===== */
+.gallery {
+    background: #f1f5f9;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.photo {
+    height: 240px;
+    background: linear-gradient(135deg, #9ca3af, #6b7280);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+    background: #fff;
+    text-align: center;
+}
+
+.contact a {
+    color: #f59e0b;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #111827;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+}
+
+/* ===== レスポンシブ ===== */
+@media (max-width: 600px) {
+    .hero-text h1 {
+        font-size: 3rem;
+        -webkit-text-stroke: 1px #f59e0b;
+    }
+
+    .hero-text p {
+        font-size: 1.6rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+}
